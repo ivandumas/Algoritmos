@@ -31,7 +31,6 @@ def bracketSyntax(str):
         return False
     return True #if there's nothing left in the stack, then and only then is the solution correct
  
- 
 if __name__ == "__main__":
     str = "()()()()()()()()()"
  
