@@ -59,6 +59,5 @@ class intToRoman:
 # Driver Code
 if __name__ == '__main__':
     n = int(sys.argv[1])
-    print("Following is minimal number",
-          "of change for", n, ": ", end = "")
+    print("Following is Roman Numeral of", n, ": ", end = "")
     intToRoman.roman(n)
