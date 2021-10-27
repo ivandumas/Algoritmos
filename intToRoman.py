@@ -60,4 +60,4 @@ class intToRoman:
 if __name__ == '__main__':
     n = int(sys.argv[1])
     print("Following is Roman Numeral of", n, ": ", end = "")
-    intToRoman.roman(n)
+    print(intToRoman.roman(n))
