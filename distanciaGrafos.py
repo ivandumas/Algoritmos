@@ -20,6 +20,13 @@ def bfs(graph, root):
 if __name__ == '__main__':
     start = 2
     graph = {0: [1, 2], 1: [2], 2: [0, 3], 3: [3]}
+    metro = {
+        "El Rosario" :  ["Instituto del Petroleo", "Tacuba"],
+        "Instituto del Petroleo" :  ["El Rosario", "La Raza", "Deportivo 18 de Marzo"],
+        "Tacuba" :  ["La Raza", "Deportivo 18 de Marzo"],
+        "La Raza" :  ["El Rosario", "Deportivo 18 de Marzo"],
+        "Deportivo 18 de Marzo" :  ["El Rosario", "La Raza"]
+    }
     print(f"Following is Breadth First Traversal: (starting from {start})")
-    bfs(graph, 2)
+    bfs(metro, "El Rosario")
     print()
